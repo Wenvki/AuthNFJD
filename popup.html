@@ -1,0 +1,186 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>南方基地上网认证</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                color: #345;
+                font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+                font-size: 9pt;
+            }
+
+            body * {
+                white-space: nowrap;
+            }
+
+            #about {
+                font-size: 10pt;
+                padding: 10px 20px;
+            }
+
+            .header{
+                width: 290px;
+                height: 90px;
+            }
+
+            .header .logo{
+                float:left;
+                margin-bottom: 20px;
+            }
+
+            .header .logo-content {
+                float:left;
+                margin-left: 10px;
+                padding-top: 5px;
+            }
+
+            .header .title{
+                font-size:24px;
+                margin: 0px 5px;
+            }
+
+            .header .sub-title{
+                font-size:16px;
+                margin: 0px 5px;
+            }
+
+            #about a {
+                cursor: pointer;
+                text-decoration: blink;
+                color: #4285f4;
+                outline : none;
+            }
+
+            #about .footer {
+                height: 15px;
+                color: #789;
+                margin: 5px;
+                padding-top: 5px;
+                border-top: solid 1px #eef;
+                white-space: nowrap;
+            }
+
+            #about #tips{
+                color: red;
+                font-size: 16px;
+                display: block;
+                padding-bottom: 5px;
+            }
+            #settings:after {
+                display: inline-block;
+                content: " ";
+                width: 100%;
+                height: 100%;
+                background: no-repeat url("/imgs/setting.png") 4px 4px;
+            }
+            .popup_copyright{
+                text-align: center;
+            }
+            #settings{
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                float: right;
+                margin-top: -22px;
+            }
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+            .col {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+            .form-control {
+                display: block;
+                width: 100%;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+            .btn-primary {
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+
+            .btn {
+                display: inline-block;
+                font-weight: 400;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                border: 1px solid transparent;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: .25rem;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="about">
+            <div class="header">
+                <div class="logo">
+                    <img src="/imgs/icon.png" width="70"/>
+                </div>
+                <div class="logo-content">
+                    <p class="title">南方基地上网认证</p>
+                    <p class="sub-title">版本：<span id="versionNumber">0.1.0</span></p>
+                </div>
+            </div>
+            <div class="body">
+                <div id="developer">
+                    <div class="name">
+                        <!--span>免费访问：<a target="_blank" href="https://www.google.com.hk">谷歌搜索</a>，<a target="_blank" href="https://mail.google.com/mail/">Gmail邮箱</a>，<a target="_blank" href="https://chrome.google.com/webstore/category/extensions?hl=zh-CN">Chrome商店</a>...</span-->
+                    </div>
+                </div>
+                <div id="account">
+                  <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input id="id_username" type="text" name="username" required="required" autocomplete="off" class="form-control" placeholder="Username">
+                      </div>
+                      <br>
+                      <div class="col">
+                        <input id="id_password" type="password" name="password" required="required" autocomplete="off" class="form-control" placeholder="Password">
+                      </div>
+                      </br>
+                      <div class="col">
+                        <button id="save" type="submit" name="save" class="btn btn-primary">保存</button>
+                        <button id="show" type="button" name="show" class="btn btn-primary">查看密码</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="popup_copyright">
+                    &copy; 2018 <a target="_blank" href="http://www.iloxp.com/">作者网站</a>
+                </div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

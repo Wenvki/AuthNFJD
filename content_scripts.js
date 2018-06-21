@@ -38,10 +38,8 @@ setInterval(function(){
     if (((ttl) && (ttl.innerText.search("00:00:00") > 0)) || (signindiv)) {
         window.location.href = "https://auth.nfjd.gmcc.net/dana-na/auth/url_default/welcome.cgi";
     } else {
-        
         console.log('Internal Online...');
         window.onbeforeunload=null; onbeforeunload=null; onunload=null, window.onunload=null;
-        console.log(window.onbeforeunload+','+window.onunload);
     }
     DoContinue();
 },1000 * 60)
